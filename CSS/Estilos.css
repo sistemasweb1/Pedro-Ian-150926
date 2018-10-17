@@ -1,0 +1,124 @@
+p {
+    text-align: center;
+}
+#img_p {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    height: 80px;
+    margin-top: -10px;
+}
+#fig_p{
+    background-color: rgb(232, 228, 255);
+    height: 80px;
+    margin-bottom: 10px;
+    margin-right: 45%;
+    margin-left: 45%;
+}
+#botonFB{
+    background-image: url("../Imagenes/FB_boton.png");
+    background-size: 30px 30px;
+    height: 30px;  
+    width: 30px;
+    display: inline-block;
+    background-repeat: no-repeat;
+    border: none;
+    cursor: pointer;
+}
+#botonInsta{
+    background-image: url("../Imagenes/Insta_boton.png");
+    background-size: 30px 30px;
+    height: 30px;  
+    width: 30px;
+    display: inline-block;
+    background-repeat: no-repeat;
+    border: none;
+    cursor: pointer;
+}
+#navbar{
+    background-color: rgb(195, 196, 223);
+    height: 30px;
+    margin: 0%;
+    margin-left: auto;
+    margin-right: auto;
+    min-width: 300px;
+    max-width: 1000px;
+}
+#navsbar{
+    float: right;
+    width: 30%;
+    max-width: 150px;
+    border: none;
+    padding: 7px;
+}
+.navbot{
+    overflow: hidden;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    margin: 0;
+    display: inline-block;
+    padding: 5px;
+    color: rgb(86, 77, 145);
+    text-decoration: none;
+}
+.navbot:hover{
+    background-color: rgb(165, 159, 219);
+    color:rgb(63, 56, 105);
+    text-decoration: none;
+}
+.navbotACTIVE{
+    overflow: hidden;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    margin: 0;
+    display: inline-block;
+    padding: 5px;
+    background-color: rgb(110, 109, 170);
+    color: white;
+    text-decoration: none;
+}
+.navbotACTIVE:hover{
+    overflow: hidden;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    margin: 0;
+    display: inline-block;
+    padding: 5px;
+    background-color: rgb(69, 68, 110);
+    color: rgb(226, 228, 243);
+    text-decoration: none;
+}
+
+.slideshow-container {
+  max-width: 1000px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 10px;
+  background-color:  rgb(154, 153, 201);
+}
+
+.mySlides {
+    display: none;
+    position: center; 
+}
+
+.row {
+    display: flex;
+    max-width: 1000px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.img{
+    height: auto; 
+    width: 100%;
+}
+.column {
+    flex: 50%;
+    height: auto;
+    max-height: 100px;
+}
+
+.container{
+    max-width: 1000px;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: rgb(154, 153, 201);
+    padding: 10px;
+}

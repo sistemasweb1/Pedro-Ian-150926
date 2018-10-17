@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="../CSS/Estilos.css">
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Principal</title>
+    </head>
+    <body style="background-color:rgb(232, 232, 250)">
+
+        <header>
+            <figure id=fig_p>
+                <a href="Pagina.html"><img src="../Imagenes/isologo-negro.png" alt="Upper Case" id="img_p"></a>
+            </figure>
+        </header>
+
+        <div id="navbar">
+            <a href="https://www.facebook.com/Uppercasecaps/" target="_blank"><button type="button" id="botonFB"></button></a>
+            <a href="https://www.instagram.com/uppercasecaps/" target="_blank"><button type="button" id="botonInsta"></button></a>
+            <a class="navbotACTIVE" href="Pagina.html">Home</a>
+            <a class="navbot" href="About.html">About</a>
+            <a class="navbot" href="Shop.html">Shop</a>
+            <a class="navbot" href="Contests.html">Contests</a>
+            <input type="text" placeholder="Search.." id="navsbar">
+        </div>
+
+        <div class="slideshow-container">
+
+            <div class="mySlides">
+                <img src="../Imagenes/publicidad_9.jpg" style="max-width: 1000px; margin-left: auto; margin-right: auto; height: auto; width: 100%;">
+            </div>
+            
+            <div class="mySlides">
+                <img src="../Imagenes/publicidad_2.jpg" style="max-width: 1000px; margin-left: auto; margin-right: auto; height: auto; width: 100%;">
+            </div>
+            
+            <div class="mySlides">
+                <img src="../Imagenes/publicidad_1.jpg" style="max-width: 1000px; margin-left: auto; margin-right: auto; height: auto; width: 100%;">
+            </div>
+
+        </div>
+        
+        <div class="container" style="background-color: rgb(108, 108, 143); height: 500px;">
+            <div class="row">
+                <div class="column">
+                    <img src="../Imagenes/publicidad_21.jpg" style="max-width: 400px; padding: auto; margin-left: 10%; margin-right: 10%;">
+                </div>
+                <div class="column">
+                    <img src="../Imagenes/publicidad_5.jpg" style="max-width: 400px; padding: auto; margin-left: 10%; margin-right: 10%;">
+                </div>
+            </div>
+        </div>
+
+        <div class="container" style="background-color: rgb(108, 108, 143); height: 500px;">
+            <div class="row">
+                <div class="column">
+                    <img src="../Imagenes/publicidad_22.jpg" style="max-width: 400px; padding: auto; margin-left: 10%; margin-right: 10%;">
+                </div>
+                <div class="column">
+                    <img src="../Imagenes/publicidad_10.jpg" style="max-width: 400px; padding: auto; margin-left: 10%; margin-right: 10%;">
+                </div>
+            </div>
+        </div>
+
+        <!--codigo de w3schools para slideshow-->
+        <script>
+            var slideIndex = 0;
+            showSlides();
+            function showSlides() {
+                var i;
+                var slides = document.getElementsByClassName("mySlides");
+                for (i = 0; i < slides.length; i++) {
+                    slides[i].style.display = "none"; 
+                }
+                slideIndex++;
+                if (slideIndex > slides.length) {slideIndex = 1} 
+                    slides[slideIndex-1].style.display = "block"; 
+                setTimeout(showSlides, 3000); 
+            }
+        </script>
+    </body>
+</html>
