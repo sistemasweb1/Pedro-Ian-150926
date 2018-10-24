@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Tutotial CSS</title>
+    </head>
+    <body>
+
+        <h1>CSS Tutorial</h1>
+
+        <p>
+            CSS is a language that describes the style of an HTML document. It describes how HTML elements should be displayed. 
+            It stands for Cascading Style Sheets, they are very useful because they can control the layout of multiple web pages all at once.
+        </p>
+        
+        <h2>Why?</h2>
+
+        <p>
+            HTML was never intended to contain tags for formatting a webpage. It was created to describe the content of the webpage.
+            When tags like &lt;font&gt;, and color attributes were added to HTML 3.2 specification, it became a nightmare for web developers.
+            It became a long and expensive process. To solve it, the World Wide Web Consortium (W3C) created CSS.
+        </p>
+
+        <h2>Syntax:</h2>
+
+        <div>
+            A CSS rule-set consists of a selector and a declaration block. Example:
+            <p style="text-indent: 20px;">h1 {color:blue; font-size:12px;}</span>
+        </div>
+
+        <ul>
+            <li>The selector points to the HTML element you want to style.</li>
+            <li>The declaration block contains one or more declarations separated by semicolons.</li>
+            <li>Each declaration includes a CSS property name and a value, separated by a colon.</li>
+            <li>A CSS declaration always ends with a semicolon, and declaration blocks are surrounded by curly braces.</li>
+        </ul>
+
+        <h2>Selectors:</h2>
+
+        <p>
+            Are used to "find" (or select) HTML elements based on their element name, id, class, attribute and more.
+        </p>
+
+        <ul>
+            <li>Element selector: selects elements based on the element name. (name )</li>
+            <li>ID selector: uses the id attribute of an HTML element to select a specific element. This id should be unique 
+                within a page. (#id)</li>
+            <li>Class selector: selects elements with a specific class attribute. All the elements of the same class will be 
+                selected. (.class)</li>
+        </ul>
+        
+        <h2>3 ways to insert CSS</h2>
+
+        <ul>
+            <li>External style sheet: you can change the style of an entire website by changing just one file. Each page must 
+                include a reference to the external style sheet file</li>
+            <li>Internal style sheet: this is used to style a single page. This is defined in the &lt;style&gt; element, 
+                inside the &lt;head&gt; section</li>
+            <li>Inline styles: may be used to style a single element. To use them, add the style attribute to the element</li>
+            <li>Multiple style sheets: If some properties have been defined for the same selector in different style sheets, 
+                the value from the last real stylesheet will be used</li>
+        </ul>
+
+        <h2>Colors</h2>
+
+        <div>
+            <h3>Types of Colors:</h3>
+            <ul>
+                <li style="background-color: cyan;">background-color</li>
+                <li style="color: darkmagenta;">color (text color)</li>
+            </ul>
+        </div>
+
+    </body>
+</html>
