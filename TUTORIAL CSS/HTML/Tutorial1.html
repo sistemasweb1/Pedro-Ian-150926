@@ -2,6 +2,30 @@
 <html>
     <head>
         <title>Tutotial CSS</title>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <style>
+            a:link {
+                color: rgb(153, 45, 45);
+            }
+            a:visited {
+                color: rgb(45, 105, 45);
+            }
+            a:hover {
+                color: rgb(155, 43, 99);
+            }
+            a:active {
+                color: rgb(42, 42, 131);
+            }
+            table {
+                border-collapse: separate;
+                border-spacing: 10px;
+                caption-side: top;
+                empty-cells: hide;
+            }
+            table, th, td {
+                border: 1px solid black;
+            }   
+        </style>
     </head>
     <body>
 
@@ -67,7 +91,202 @@
             <ul>
                 <li style="background-color: cyan;">background-color</li>
                 <li style="color: darkmagenta;">color (text color)</li>
+                <li style="border: 2px solid black;">border (border color)</li>
             </ul>
+        </div>
+
+        <h2>Backgrounds</h2>
+
+        <div>
+            <p>The CSS background properties are used to define the background effects for elements. List of properties:</p>
+            <ul>
+                <li style="background-color: aquamarine;">background-color: specifies the color of background of an element</li>
+                <li style="background-image: url(../../Imagenes/FB_boton.png); color:  white">background-image: specifies an image to use as the background of an element</li>
+                <li style="background-image: url(../../Imagenes/FB_boton.png); background-repeat: no-repeat;"><span style="color: white;">background-repeat: sets how a backgro</span>und image will be repeated, by default it will repeat</li>
+                <li style="background-image: url(../../Imagenes/FB_boton.png); background-repeat: no-repeat; background-attachment: fixed;">background-attachment: sets whether a background image is fixed or scrolls with the page</li>
+                <li style="background-image: url(../../Imagenes/FB_boton.png); background-repeat: no-repeat; background-position: 50%">background-position: sets the starting position of a background image</li>
+                <li style="background-color: aquamarine; background-clip: padding-box; padding: 5px;">background-clip: specifies the painting area of the background</li>
+                <li style="background-image: url(../../Imagenes/FB_boton.png); background-repeat: no-repeat; background-origin: padding-box; padding: 5px;"><span style="color: white">background-origin: specifies where th</span>e background image will be positioned</li>
+                <li style="background-image: url(../../Imagenes/FB_boton.png); background-size: 20px; background-repeat: no-repeat; background-position-x: 400px">background-size: specifies the size of the background image</li>
+            </ul>
+        </div>
+
+        <h2>Borders</h2>
+
+        <div>
+            <p>The CSS border properties allow you to specify the style, width, and color of an element's border. List of properties:</p>
+            <ul>
+                <li style="border-bottom: 3px solid black;">border-side: sets all the border properties for a specific side in one declaration</li>
+                <li style="border-style: solid; border-color: gray;">border-color: sets the color of the border</li>
+                <li style="border-style: double; border-color: maroon;">border-style: sets the style of the border</li>
+                <li style="border-style: solid; border-color: mediumblue; border-width: 5px;">border-width: sets the width of the border</li>
+                <li style="border: 2px solid brown; border-radius: 10px;">border-radius: sets all the four borders -*- radius properties for rounded corners</li>
+            </ul>
+        </div>
+
+        <h2>Margins</h2>
+
+        <div>
+            <p>The CSS margin properties are used to create space around elements, outside of any defined borders. 
+                You can specify properties for each side. Negative values are allowed. They can have the following values:</p>
+            <ul style="margin-left: 10px; border: solid rgb(54, 51, 51);">
+                <li style="margin: auto; border: solid black;">auto: the browser calculates the margin</li>
+                <li style="margin: 5px; border: solid rgb(19, 18, 18);">length: specifies a margin in px, pt, cm, etc.</li>
+                <li style="margin: 3%; border: solid rgb(24, 23, 23);">%: specifies a margin in % of the width of the containing element</li>
+                <li style="margin: inherit; border: solid rgb(44, 41, 41);">inherit: specifies that the margin should be inherited from the parent element</li>
+            </ul>    
+        </div>
+
+        <h2>Padding</h2>
+
+        <div>
+            <p>The CSS padding properties are used to generate space around an element's content, inside of any defined borders. 
+                You can specify properties for each side. Negative values are not allowed. They can have the following values.</p>
+            <ul style="padding: 10px; border: solid rgb(54, 51, 51);">
+                <li style="padding: 5px; border: solid rgb(19, 18, 18);">length: specifies a padding in px, pt, cm, etc.</li>
+                <li style="padding: 3%; border: solid rgb(24, 23, 23);">%: specifies a padding in % of the width of the containing element</li>
+                <li style="padding: inherit; border: solid rgb(44, 41, 41);">inherit: specifies that the padding should be inherited from the parent element</li>
+            </ul>
+        </div>
+
+        <h2>Height and Width</h2>
+
+        <div>
+            <p>This are properties used to set the height and the width of an element. You can set them with px, cm, etc. or with
+                % values or use the auto value. Dimension properties:</p>
+            <ul>
+                <li style="height: 30px; background-color: gray;">height: sets the height of an element</li>
+                <li style="min-height: 50px; background-color: lightgray;">min-height: sets the minimum height of an element</li>
+                <li style="max-height: 40px; background-color: gray;">max-height: sets the maximum height of an element</li>
+                <li style="width: 100px; background-color: lightgray;">width: sets the width of an element</li>
+                <li style="min-width: 80px; background-color: gray;">min-width: sets the minimum width of an element</li>
+                <li style="max-width: 120px; background-color: lightgray;">max-width: sets the maximum width of an element</li>
+            </ul>
+        </div>
+
+        <h2>Box Model</h2>
+
+        <div>
+            <p>It is essentially a box that wraps around every HTML element. It consists of: margins, borders, padding, and the actual content. Example:</p>
+            <p style="background-color: lightgrey; width: 300px; border: 25px solid green; padding: 25px; margin: 25px;"> HELLO</p>
+        </div>
+
+        <h2>Outline</h2>
+
+        <div>
+            <p>An outline is a line that is drawn around elements, outside the borders, to make the element "stand out". It has the following properties: </p>
+            <ul>
+                <li style="margin: 5px; padding: 5px; outline-color: black; outline-style: dotted; border: solid rgb(78, 73, 73);">outline-style: Sets the style of an outline</li>
+                <li style="margin: 5px; padding: 5px; outline-color: lightcoral; outline-style: solid; border: solid rgb(78, 73, 73);">outline-color: Sets the color of an outline</li>
+                <li style="margin: 5px; padding: 5px; outline-color: red; outline-style: solid; outline-width: 2px; border: solid black;">outline-width: Sets the width of an outline</li>
+                <li style="margin: 5px; padding: 5px; outline-color: rgb(155, 53, 53); outline-style: solid; outline-offset: 2px; border: solid black;">outline-offset: Specifies the space between an outline and the edge or border of an element</li>
+            </ul>
+        </div>
+
+        <h2>Text</h2>
+
+        <div>
+            <p>List of properties for formatting text of elements:</p>
+            <ul>
+                <li style="color: darkblue;">color: sets the color of text</li>
+                <li style="direction: ltr;">direction: specifies the text direction/writing direction</li>
+                <li style="letter-spacing: 1px;">letter-spacing: increases or decreases the space between characters in a text</li>
+                <li style="line-height: 30px;">line-height: sets the line height</li>
+                <li style="text-align:center;">text-align: specifies the horizontal alignment of text</li>
+                <li style="text-decoration: underline;">text-decoration: specifies the decoration added to text</li>
+                <li style="text-indent: 20px;">text-indent: specifies the indentation of the first line in a text-block</li>
+                <li style="text-shadow: 1px 1px royalblue;">text-shadow: specifies the shadow effect added to text</li>
+                <li style="text-transform: uppercase;">text-transform: controls the capitalization of text</li>
+                <li>text-overflow: specifies how overflowed content that is not displayed should be signaled to the user. Example:</li>
+                <li style="white-space: nowrap; width: 200px; overflow: hidden; text-overflow: ellipsis;">Lorem ipsum dolor sit amet consectetur</li>
+                <li>unicode-bidi: used together with the direction property to set or return whether the text should be overridden to support multiple languages in the same document. <span style="direction: rtl; unicode-bidi: bidi-override;">Example</span></li>
+                <li>vertical-align: sets the vertical alignment of an <span style="vertical-align:sub;">element</span></li>
+                <li style="white-space: nowrap;">white-space: specifies how white-space inside an element is handled. Example: Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores laboriosam nobis, porro explicabo libero dolore, tenetur repellat perferendis nesciunt unde iure quia, eligendi pariatur itaque molestias. Nesciunt eligendi modi quisquam!</li>
+                <li style="word-spacing: 10px;">word-spacing: increases or decreases the space between words in a text</li>
+            </ul>
+        </div>
+
+        <h2>Fonts</h2>
+
+        <div>
+            <p>List of properties:</p>
+            <ul>
+                <li style="font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;">font-family: Specifies the font family for text</li>
+                <li style="font-size: 20px;">font-size: Specifies the font size of text</li>
+                <li style="font-style: italic;">font-style: Specifies the font style for text</li>
+                <li style="font-variant: small-caps;">font-variant: Specifies whether or not a text should be displayed in a small-caps font</li>
+                <li style="font-weight: 1000;">font-weight: Specifies the weight of a font</li>
+            </ul>
+        </div>
+
+        <h2>Icons</h2>
+
+        <div>
+            <p>The simplest way to add an icon to your HTML page, is with an icon library, such as Font Awesome.
+                 Add the name of the specified icon class to any inline HTML element (like &lt;i&gt; or &lt;span&gt;).
+                  All the icons in the icon libraries below, are scalable vectors that can be customized with CSS (size, color, shadow, etc.)</p>
+            <i class="fa fa-cloud"></i>
+            <i class="fa fa-heart"></i>
+            <i class="fa fa-car"></i>
+            <i class="fa fa-file"></i>
+            <i class="fa fa-bars"></i>
+        </div>
+
+        <h2>Links</h2>
+
+        <div>
+            <p>Links can be styled with any CSS property. They can be styled differently depending on what state they are in.<br>States:</p>
+            <ul>
+                <li><a href="https://www.wikipedia.com">a:link</a>: a normal, unvisited link</li>
+                <li>a:visited: a link the user has visited</li>
+                <li>a:hover: a link when the user mouses over it</li>
+                <li>a:active: a link the moment it is clicked</li>
+            </ul>
+        </div>
+
+        <h2>Lists</h2>
+
+        <div>
+            <p>List of properties:</p>
+            <ul style="list-style: square inside url(../../Imagenes/FB_boton_mini.png)">
+                <li>list-style-image: specifies an image as the list-item marker</li>
+                <li>list-style-position: Specifies the position of the list-item markers (bullet points)</li>
+                <li>list-style-type: Specifies the type of list-item marker</li>
+            </ul>
+        </div>
+
+        <h2>Tables:</h2>
+
+        <div>
+            <p>List of properties:</p>
+            <ul>
+                <li>border-collapse: Specifies whether or not table borders should be collapsed</li>
+                <li>border-spacing: Specifies the distance between the borders of adjacent cells</li>
+                <li>caption-side: Specifies the placement of a table caption</li>
+                <li>empty-cells: Specifies whether or not to display borders and background on empty cells in a table</li>
+                <li>table-layout: Sets the layout algorithm to be used for a table</li>
+            </ul>
+            <table>
+                <caption>Caption</caption>
+                <tr>
+                    <th>Firstname</th>
+                    <th>Lastname</th>
+                </tr>
+                <tr>
+                    <td>Peter</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>Lois</td>
+                    <td>Griffin</td>
+                </tr>
+            </table>
+        </div>
+
+        <h2>Display</h2>
+
+        <div>
+            <p></p>
         </div>
 
     </body>
