@@ -24,7 +24,20 @@
             }
             table, th, td {
                 border: 1px solid black;
-            }   
+            }
+            .hidden:hover {
+                display: none;
+            }
+            .hiden:hover {
+                visibility: hidden;
+            }
+            .ficsed:hover {
+                position: fixed; 
+                bottom: 50%; 
+                right: 50%; 
+                width: 400px; 
+                border: 3px solid blue;
+            }
         </style>
     </head>
     <body>
@@ -286,7 +299,100 @@
         <h2>Display</h2>
 
         <div>
-            <p></p>
+            <p>Important property for controlling layout. Specifies how an element is displayed, and depending on the element it may have a default display value</p>
+            <ul>
+                <li>Block-level elements: always starts on a new line and takes up the full width available. <br>
+                    Examples: &lt;div&gt;, &lt;h1&gt;-&lt;h6&gt;, &lt;p&gt;, &lt;form&gt;, &lt;header&gt;, &lt;footer&gt;, &lt;section&gt;</li>
+                <li>Inline elements: They don't start on new lines and only takes up as much width as necessary.<br>
+                    Examples: &lt;span&gt;, &lt;a&gt;, &lt;img&gt;.</li>
+                <li class="hidden">Display:none: will hide the element, and the page will be displayed as if it was not there</li>
+                <li class="hiden">Visibility:hidden: will hide the element, but, it will also take the space necesary</li>
+            </ul>
+        </div>
+
+        <h2>Position</h2>
+
+        <div>
+            <p>This property specifies the type of positioning methos used for an element</p>
+            <ul>
+                <li style="position: static; border: 3px solid blue;">Static: elements are not affected by the top, bottom, left, and right properties.</li>
+                <li style="position: relative; left:30px; border: 3px solid blue;">Relative: elements are positioned relative to its normal position</li>
+                <li class="ficsed">Fixed: elements are positioned relative to the viewport, which means it always stays in the same place even if the page is scrolled</li>
+                <li style="position: absolute; top: 80px; right: 0; width: 200px; height: 100px; border: 3px solid blue; z-index: 0;">Absolute: elements are positioned relative to the nearest positioned ancestor, if it has no positioned ancestors, it uses the document body, and moves along with page scrolling</li>
+                <li style="position: sticky; top: 0; background-color: aqua; border: 3px solid blue;">Sticky: elements are positioned based on the user's scroll position</li>
+                <li stlye="z-index: 1;">z-index: this property specifies the stack order of an element (which element should be placed in front of, or behind, the others)</li>
+                <li>clip: this property clips an absolutely positioned element</li>
+                <img style="position: absolute; clip: rect(0px, 60px, 200px, 0px);" src="../../Imagenes/FB_boton.png" width="auto" height="100">
+            </ul>
+        </div><br><br><br><br><br>
+
+        <h2>Overflow</h2>
+
+        <div>
+            <p>This property controls what happens to content that is too big to fit into a area.<br>
+                It has the following values:</p>
+            <ul>
+                <li style="width: 200px; height: 50px; background-color: greenyellow; overflow: visible;">visible: Default. The overflow isn't clipped. It renders outside the element's box</li>
+                <li style="width: 200px; height: 50px; background-color: lightcyan; overflow: hidden;">hidden: The overflow is clipped, and the rest of the content will be invisible</li>
+                <li style="width: 200px; height: 50px; background-color: lightgreen; overflow: scroll;">scroll: The overflow is clipped, but a scrollbar is added to see the rest of the content</li>
+                <li style="width: 200px; height: 50px; background-color: greenyellow; overflow: auto;">auto: If overflow is clipped, a scrollbar is added to see the rest of the content</li>
+            </ul>
+        </div>
+
+        <h2>Float</h2>
+
+        <div>
+            <p>This property specifies how an element should float<br>
+                It has the following values:</p>
+            <ul style="float: none;">
+                <li style="float: left;">left: float to the left</li>
+                <li style="float: right;">right: float to the right</li><br>
+                <li style="float: none;">none: don't float</li>
+                <li style="float: inherit;">inherit: inherits the float value of its parent.</li>
+            </ul>
+        </div>
+
+        <h2>Clear</h2>
+
+        <div>
+            <p style="float: left;">This property specifies what elements can float beside the cleared element and on which side<br>
+                It has the following values:</p>
+            <ul style="clear: left;">
+                <li>none: Default. Allows floating elements on both sides</li>
+                <li>left: No floating elements on the left side</li>
+                <li>right: No floating elements on the right side</li>
+                <li>both: No floating elements on either side</li>
+                <li>inherit: inherits the clear value of its parent</li>
+            </ul>
+        </div>
+
+        <h2>Combinators</h2>
+
+        <div>
+            <p>A combinator is something that explains the relationship between the selectors<br>
+                There are 4 different combinators: </p>
+            <ul>
+                <li>descendant selector (space): The descendant selector matches all elements that are descendants of a specified element</li>
+                <li>child selector (>): The child selector selects all elements that are the immediate children of a specified element</li>
+                <li>adjacent sibling selector (+): The adjacent sibling selector selects all elements that are the adjacent siblings of a specified element</li>
+                <li>general sibling selector (~): The general sibling selector selects all elements that are siblings of a specified element</li>
+            </ul>
+        </div>
+
+        <h2>Pseudo-classes</h2>
+
+        <div>
+            <p>A pseudo-class is used to define a special state of an element.<br>
+                It can e used, for example:</p>
+            <ul>
+                <li>Style an element when a user mouses over it</li>
+                <li>Style visited and unvisited links differently</li>
+                <li>Style an element when it gets focus</li>
+            </ul>
+            <p>Syntax:<br>
+                selector:pseudo-class {<br>
+                property:value;<br>
+                }</p>
         </div>
 
     </body>
