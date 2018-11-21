@@ -103,6 +103,16 @@ body {
     position: center; 
 }
 
+.fade{
+    animation:fading 4s;
+}
+
+@keyframes fading{
+    0%{opacity:0}
+    35%{opacity:1;}
+    100%{opacity:1}
+}
+
 .container{
     max-width: 1000px;
     margin-left: auto;
@@ -118,10 +128,24 @@ body {
     margin-right: auto;
 }
 
-.column2 {
+.column1 {
     flex: 50%;
     height: auto;
     max-height: 100px;
+}
+
+.column2 {
+    font-family: BlacklistFont;
+    flex: 50%;
+    height: auto;
+    max-height: 100px;
+}
+
+/*Responsive*/
+@media (max-width: 800px) {
+    .column2 {
+        flex: 100%;
+    }
 }
 
 .imgResponsive{
@@ -129,8 +153,20 @@ body {
     width: 100%;
 }
 
+.videoResponsive{
+    height: auto;
+    width: 100%;
+}
+
 .centerBlocks{
     margin-left: auto;
     margin-right: auto;
     display: block;
+}
+
+/*FONTS*/
+
+@font-face {
+    font-family: "BlacklistFont";
+    src: url("../Fonts/TheBlacklist.woff");
 }
