@@ -119,6 +119,7 @@ body {
     margin-right: auto;
     background-color: rgb(154, 153, 201);
     padding: 10px;
+    background-image: url("../Imagenes/simple_background.jpg");
 }
 
 .row {
@@ -139,13 +140,6 @@ body {
     flex: 50%;
     height: auto;
     max-height: 100px;
-}
-
-/*Responsive*/
-@media (max-width: 800px) {
-    .column2 {
-        flex: 100%;
-    }
 }
 
 .imgResponsive{
